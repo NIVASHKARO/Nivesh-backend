@@ -5,7 +5,7 @@ const createError = require("http-errors");
 const morgan = require("morgan");
 require("dotenv").config();
 const path = require("path");
-const PORT = process.env.PORT || 8012;
+const port = 5000;
 const { verifyToken } = require("./middlewares/tokenVerification");
 const { connectDB } = require("./init_mongodb");
 const { createFolders } = require("./helpers/index");
