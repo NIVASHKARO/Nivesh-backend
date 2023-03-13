@@ -5,7 +5,7 @@ const createError = require("http-errors");
 const morgan = require("morgan");
 require("dotenv").config();
 const path = require("path");
-const port = 5000;
+const PORT =  9000;
 const { verifyToken } = require("./middlewares/tokenVerification");
 const { connectDB } = require("./init_mongodb");
 const { createFolders } = require("./helpers/index");
@@ -83,6 +83,6 @@ app.use((err, req, res, next) => {
   });
 });
 
-app.listen(port, () => {
-  console.log(`Server ${process.pid} Up on ${port}`);
+app.listen(PORT, () => {
+  console.log(`Server ${process.pid} Up on ${PORT}`);
 });
