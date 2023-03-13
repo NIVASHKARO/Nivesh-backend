@@ -83,6 +83,6 @@ app.use((err, req, res, next) => {
   });
 });
 
-app.listen(PORT, () => {
-  console.log(`Server ${process.pid} Up on ${PORT}`);
+app.listen(port, () => {
+  console.log(`Server ${process.pid} Up on ${port}`);
 });
