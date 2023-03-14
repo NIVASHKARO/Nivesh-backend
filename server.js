@@ -14,7 +14,7 @@ require("./helpers/cron");
 createFolders();
 connectDB();
 
-const whitelist = ["http://localhost:3000", "http://localhost:3001"];
+const whitelist = ["https://nivesh-landing.netlify.app", "https://nivesh-frontend.netlify.apps"];
 app.use(cookieParser(process.env.COOKIE_SECRET));
 app.use(express.json({ limit: "50mb" }));
 app.use(express.urlencoded({ extended: false, limit: "50mb" }));
